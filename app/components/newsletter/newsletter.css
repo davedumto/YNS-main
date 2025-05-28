@@ -1,0 +1,9 @@
+.newsletter {
+  background-image: url("/newsletterbg.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  width: 100%;
+  height: 100%;
+  
+}
