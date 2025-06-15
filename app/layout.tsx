@@ -1,12 +1,11 @@
-// app/layout.tsx
 import type { Metadata } from "next";
-import { Inter, Nunito } from 'next/font/google';
+import { Inter, Nunito } from "next/font/google";
+import { Analytics } from '@vercel/analytics/react';
 import "./globals.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import ClientLayout from '@/app/client-layout';
-import Loader from '@/components/loader';
-
+import ClientLayout from "@/app/client-layout";
+import Loader from "@/components/loader";
 
 const nunito = Nunito({
   subsets: ["latin"],
@@ -28,6 +27,7 @@ export default function RootLayout({
       <body className={nunito.className}>
         <Loader />
         <ClientLayout>{children}</ClientLayout>
+        <Analytics />
       </body>
     </html>
   );

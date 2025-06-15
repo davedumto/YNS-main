@@ -44,8 +44,7 @@ export default function NotFound() {
               <div className="w-12 h-1 bg-dark-orange mb-4"></div>
 
               <p className="text-ash mb-2">
-                The page you&apos;re looking for doesn&apos;t exist or has been
-                moved.
+                The page you&apos;re looking for is currently under construction and will be available soon.
               </p>
               <p className="text-ash mb-6">Let&apos;s get you back on track.</p>
 

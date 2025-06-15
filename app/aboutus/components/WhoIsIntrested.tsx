@@ -35,26 +35,27 @@ const WhoIsInterested = () => {
   const [[page, direction], setPage] = useState([0, 0]);
   const [isMobile, setIsMobile] = useState(false);
 
-  const interestData = [
-    {
-      title: "Gaining new skills",
-      description: "Whether you're looking to upskill for your current job or start a new career, we can help.",
-      imageUrl: inStar1,
-      bgColor: "bg-[#114F3C]"
-    },
-    {
-      title: "Networking with like minds",
-      description: "Connect with professionals who share your goals and open doors for career growth and opportunities.",
-      imageUrl: inStar2,
-      bgColor: "bg-[#98BC6D]"
-    },
-    {
-      title: "Gaining new skills", // Note: this title appears to be duplicated in the original
-      description: "Whether you're looking to upskill for your current job or start a new career, we can help.",
-      imageUrl: inStar3,
-      bgColor: "bg-[#EF4C0D]"
-    }
-  ];
+const interestData = [
+  {
+    title: "Discovering New Talents",
+    description: "Our outreach programs help young students explore skills like coding, design, and robotics, opening their eyes to exciting future careers.",
+    imageUrl: inStar1,
+    bgColor: "bg-[#114F3C]"
+  },
+  {
+    title: "Learning with Friends",
+    description: "We create fun, team-based learning environments where students connect, collaborate, and grow together through shared experiences.",
+    imageUrl: inStar2,
+    bgColor: "bg-[#98BC6D]"
+  },
+  {
+    title: "Building Real-World Skills",
+    description: "From hands-on STEM activities to vocational training, we equip students with practical skills they can use now and in the future.",
+    imageUrl: inStar3,
+    bgColor: "bg-[#EF4C0D]"
+  }
+];
+
 
   useEffect(() => {
     const checkMobile = () => {

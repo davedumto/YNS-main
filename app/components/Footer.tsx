@@ -6,17 +6,17 @@ const Footer = () => {
 
   // Company links
   const companyLinks = [
-    { name: "About us", href: "/about-us" },
+    { name: "About us", href: "/aboutus" },
     { name: "Contact", href: "/contact-us" },
-    { name: "Partners", href: "/partners" },
+    // { name: "Partners", href: "/partners" },
     { name: "Privacy Policy", href: "/privacy-policy" },
-    { name: "Cookies Policy", href: "/cookies-policy" },
+    // { name: "Cookies Policy", href: "/cookies-policy" },
   ];
 
   // Resources links
   const resourcesLinks = [
     { name: "Blog", href: "/blog" },
-    { name: "Help Center", href: "/help-center" },
+    { name: "Help Center", href: "/contact-us" },
     // { name: "Partners", href: "/partners" },
     { name: "Courses", href: "/courses" },
     { name: "Learn", href: "/learn" },
@@ -24,7 +24,7 @@ const Footer = () => {
 
   // Legal links
   const legalLinks = [
-    { name: "Privacy Policy", href: "/privacy-policy" },
+    // { name: "Privacy Policy", href: "/privacy-policy" },
     { name: "Terms of Use", href: "/terms-of-use" },
     { name: "Cookie Policy", href: "/cookie-policy" },
   ];
@@ -63,7 +63,7 @@ const Footer = () => {
         <div className="flex flex-col gap-[125px] w-full">
           <div className="lg:flex justify-between gap-[6em] w-full h-full items-start ">
             <Image
-              src="/images/Logo.svg"
+              src="/images/logo-main2.png"
               alt="Logo"
               width={200}
               height={50}

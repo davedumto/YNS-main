@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button";
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
-import { LogoMain } from "@/public/images";
+import  LogoMain  from "@/public/images/logo-main.png";
 import { useNavigationLoader } from "@/app/hooks/useNavigation";
 
 const navlinks = [
@@ -256,11 +256,11 @@ const Navbar: React.FC = () => {
               {/* Logo inside the dropdown */}
               <div className="flex w-full justify-between">
                 <Image
-                  src="/images/logo.svg"
+                  src="/images/logo-main2.png"
                   alt="Logo"
                   width={60}
-                  height={33}
-                  className="w-[60px] h-[33px]"
+                  height={40}
+                  className="w-[70px] h-[50px]"
                 />
                 {/* Close button inside dropdown */}
                 <button onClick={closeMobileMenu} className="">

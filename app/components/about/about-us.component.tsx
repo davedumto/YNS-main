@@ -41,14 +41,12 @@ const AboutUs = () => {
           <div className="  w-full">
             <Image
               src={AboutBg}
-              className="h-40 w-52 sm:h-52 sm:w-60  left-4 md:left-9 lg:left-0 relative z-0 right-1 xl:w-auto xl:h-auto object-contain "
+              className="h-45 w-52 sm:h-52 sm:w-60  left-4 md:left-9 lg:left-0 relative z-0 right-1 xl:w-auto xl:h-auto object-contain "
               alt=""
             />
           </div>
 
           <div className="">
-
-
             <Image
               src={badge}
               className="lg:w-auto lg:h-auto w-16 h-16 z-10 absolute right-14 sm:-right-14 lg:-right-32 xl:-right-14 object-contain "
@@ -58,7 +56,7 @@ const AboutUs = () => {
           <div className="absolute -bottom-28 lg:-bottom-[10em] right-14 sm:-right-12 lg:-right-[3em] z-0 ">
             <Image
               src={img2}
-              className="h-40 w-52 sm:h-52 sm:w-60 lg:w-auto lg:h-auto object-contain"
+              className="h-50 w-52 sm:h-52 sm:w-60 lg:w-[22em]  lg:h-[15em] object-contain"
               alt=""
             />
           </div>
@@ -76,15 +74,15 @@ const AboutUs = () => {
           </h3>
 
           <p className="text-base w-full font-400 leading-8 text-black/60 font-manrope tracking-wide lg:pr-[2.5em] xl:p-0">
-            Welcome to Young and Skilled Initiative, where we believe that every
-            student has the potential to achieve greatness. Our mission is to
-            provide high-quality learning experiences that equip young minds
-            with the skills and knowledge they need to thrive in an
-            ever-changing world.
+            Welcome to Young and Skilled Initiative, a non-profit committed to
+            helping students in underserved communities unlock their full
+            potential. We provide access to vocational training, STEM education,
+            and life-changing support to ensure every young mind is prepared to
+            succeed in today`s fast-evolving world.
           </p>
 
           <div className="w-full mt-[15px] flex items-center justify-center sm:justify-start ">
-            <Link href='/aboutus'>
+            <Link href="/aboutus">
               <button className="bg-[#114F3C] sm:h-[62.97px] rounded-[44.98px] flex items-center justify-center text-sm sm:text-[17.19px] text-white py-[18.49px] px-8 sm:px-[40px] ">
                 Explore More About Us
               </button>
@@ -129,4 +127,3 @@ const AboutUs = () => {
 };
 
 export default AboutUs;
-// git config pull rebase --false
