@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import Link from "next/link";
 
 import { Group } from "@/public";
-import { Hero_Mobile } from "@/public/icons";
+import  Hero_Mobile  from "@/public/images/mob-hero.png";
 
 export default function Hero() {
   return (
