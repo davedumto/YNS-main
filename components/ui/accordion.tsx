@@ -2,7 +2,7 @@
 
 import * as React from "react";
 import * as AccordionPrimitive from "@radix-ui/react-accordion";
-import star from "@/public/star.png";
+import star from "@/public/star.webp";
 import star2 from "@/public/testimonial_star.svg";
 import { cn } from "@/lib/utils";
 import Image from "next/image";

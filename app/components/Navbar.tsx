@@ -6,13 +6,13 @@ import { Button } from "@/components/ui/button";
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
-import  LogoMain  from "@/public/images/logo-main.png";
+import  LogoMain  from "@/public/images/logo-main.webp";
 import { useNavigationLoader } from "@/app/hooks/useNavigation";
 
 const navlinks = [
   { route: "Home", link: "/", id: "home" },
   { route: "About us", link: "/aboutus", id: "about" },
-  { route: "Resources", link: "/resources", id: "resources" },
+  // { route: "Resources", link: "/resources", id: "resources" },
   { route: "Contact us", link: "/contact-us", id: "contact-us" },
   { route: "Blog", link: "/blog", id: "blog" },
   { route: "Join Movement", link: "/join-movement", id: "join-movement" },
@@ -256,7 +256,7 @@ const Navbar: React.FC = () => {
               {/* Logo inside the dropdown */}
               <div className="flex w-full justify-between">
                 <Image
-                  src="/images/logo-main2.png"
+                  src="/images/logo-main2.webp"
                   alt="Logo"
                   width={60}
                   height={40}

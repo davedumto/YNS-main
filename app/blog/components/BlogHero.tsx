@@ -5,7 +5,7 @@ import React, { useState } from "react";
 
 const BlogHero = () => {
   const categories = ["All", "Education", "Career", "Company", "Courses"];
-  const backgroundImage = "/images/blog-hero.png"; // Update this with your image path
+  const backgroundImage = "/images/blog-hero.webp"; // Update this with your image path
   const [activeCategory, setActiveCategory] = useState(0);
   return (
     <section
