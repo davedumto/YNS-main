@@ -1,12 +1,15 @@
+'use client'
 import Image from "next/image";
-import React from "react";
+import React, { useState } from "react";
 import Star from "@/public/cstar.svg";
 import Star2 from "@/public/stargreen.svg";
-import Man from "@/public/man.gif";
+// Video files will be loaded directly in the video element
 import Logo from "@/public/orangelogo.svg";
 import Link from "next/link";
 
 const PersonalizedLearning: React.FC = () => {
+  const [isVideoLoaded, setIsVideoLoaded] = useState(false);
+
   return (
     <div className="bg-black mb-[4em] lg:mb-[9em] lg:px-[6em]">
       <div className="flex flex-col lg:flex-row justify-between 2xl:justify-center lg:px-[5em] items-center w-full lg:p-10 px-[2em] container mx-auto">
@@ -48,7 +51,7 @@ const PersonalizedLearning: React.FC = () => {
       </div>
 
       {/* Mobile Star */}
-      <div className="flex items-left lg:hidden mb-7 ml-[2em] w-10 lg:w-full">
+      <div className="flex  items-left lg:hidden mb-7 ml-[2em] w-10 lg:w-full">
         <Image
           src={Star}
           alt=""
@@ -63,7 +66,7 @@ const PersonalizedLearning: React.FC = () => {
         <div className="mx-auto relative">
           
           {/* Instagram Link Star */}
-          <div className="absolute -left-[5em]">
+          <div className="absolute -left-[5em] z-20">
             <Link
               href="https://www.instagram.com/ysinitiative?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
               aria-label="Follow us on Instagram"
@@ -78,17 +81,30 @@ const PersonalizedLearning: React.FC = () => {
             </Link>
           </div>
 
-          {/* Main GIF - Optimized but keeping original behavior */}
-          <div className="px-5">
-            <Image
-              src={Man}
-              alt="Student learning animation"
-              className="rounded-[2em] lg:-mb-[7em] -mb-[4em]"
-              priority
-              unoptimized
-              placeholder="blur"
-              blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAIAAoDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAhEAACAQMDBQAAAAAAAAAAAAABAgMABAUGIWGRkqGx0f/EABUBAQEAAAAAAAAAAAAAAAAAAAMF/8QAGhEAAgIDAAAAAAAAAAAAAAAAAAECEgMRkf/aAAwDAQACEQMRAD8AltJagyeH0AthI5xdrLcNM91BF5pX2HaH9bcfaSXWGaRmknyJckliyjqTzSlT54b6bk+h0R//2Q=="
-            />
+          {/* Main Video - Converted from GIF for better performance */}
+          <div className="px-5 relative">
+            {/* Skeleton Loader */}
+            {!isVideoLoaded && (
+              <div className="absolute inset-0 mx-5 rounded-[2em] bg-gradient-to-r from-gray-800 via-gray-700 to-gray-800 animate-pulse">
+                <div className="flex items-center justify-center h-full">
+                  <div className="w-16 h-16 border-4 border-gray-600 border-t-white rounded-full animate-spin"></div>
+                </div>
+              </div>
+            )}
+            
+            <video
+              autoPlay
+              muted
+              loop
+              playsInline
+              className="rounded-[2em] lg:-mb-[7em] -mb-[4em] w-full h-auto"
+              poster="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAIAAoDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAhEAACAQMDBQAAAAAAAAAAAAABAgMABAUGIWGRkqGx0f/EABUBAQEAAAAAAAAAAAAAAAAAAAMF/8QAGhEAAgIDAAAAAAAAAAAAAAAAAAECEgMRkf/aAAwDAQACEQMRAD8AltJagyeH0AthI5xdrLcNM91BF5pX2HaH9bcfaSXWGaRmknyJckliyjqTzSlT54b6bk+h0R//2Q=="
+              onLoadedData={() => setIsVideoLoaded(true)}
+              onCanPlay={() => setIsVideoLoaded(true)}
+            >
+              <source src="/man.webm" type="video/webm" />
+              Your browser does not support the video tag.
+            </video>
           </div>
 
           {/* Logo Decoration */}

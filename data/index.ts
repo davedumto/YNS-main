@@ -3,7 +3,7 @@ export const teamMembers = [
     id: 1,
     name: "Marley",
     role: "Branding Lead",
-    image: "/Brandidentity.jpg",
+    image: "/Brandidentity.webp",
     instagram: "https://www.instagram.com/marlee_me_/profilecard/?igsh=MWpheDlpajQ3OTl1OA==",
     linkedin: "https://www.linkedin.com/in/marley-ogwe-00162a20b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
   },
@@ -11,7 +11,7 @@ export const teamMembers = [
     id: 2,
     name: "Dumto",
     role: "Software Team Lead",
-    image: "/dumto.jpeg",
+    image: "/dumto.webp",
     instagram: "https://www.instagram.com/small_llieee",
     linkedin: "www.linkedin.com/in/david-ejere-5056161a1",
   },
@@ -19,7 +19,7 @@ export const teamMembers = [
     id: 3,
     name: "Success",
     role: "Social Media Lead",
-    image: "/Contentwriter.jpeg",
+    image: "/Contentwriter.webp",
     instagram: "https://www.instagram.com/intentional_mimi/profilecard/?igsh=b3V3NzNuZHRjd2Zk",
     linkedin: "https://www.linkedin.com/in/success-nwajie-seocontentwriter?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
   },
@@ -27,7 +27,7 @@ export const teamMembers = [
     id: 4,
     name: "Priscilla",
     role: "Event planner",
-    image: "/Eventplanner.jpg",
+    image: "/Eventplanner.webp",
     instagram: "https://www.instagram.com/grillzbynonny?igsh=MXdrNXNtOG05YXd2&utm_source=qr",
     linkedin: "https://www.linkedin.com/in/priscilla-ononye-08320a303?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
   },
@@ -36,7 +36,7 @@ export const teamMembers = [
     id: 5,
     name: "John",
     role: " Product Design Lead",
-    image: "/johnDesigner.jpg",
+    image: "/johnDesigner.webp",
     instagram: "https://www.instagram.com/the.lex.jo/",
     linkedin: "https://www.linkedin.com/in/john-achimugu-4341b2214?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
   },
@@ -120,7 +120,7 @@ export const blogCards: BlogCardData[] = [
         content:
           "Everybody loves free gifts and rewards. You can use this to your advantage. Celebrating small wins can be a huge motivation booster in your online course journey. Whenever you finish a module in your course, you can attach a reward. For instance, after completing a module, treat yourself to something you enjoy—a favorite snack, an episode of your favorite show, or a short walk outside. This gives your brain enough time to rest while getting it excited for the next round of action. These little rewards act as positive reinforcement, keeping you excited and motivated to tackle the next section of your course.",
         imageContent: {
-          image: "/onlinecourse.jpg",
+          image: "/onlinecourse.webp",
 
           alt: "Student taking an online course",
         },
@@ -189,7 +189,7 @@ export const blogCards: BlogCardData[] = [
       content:
         "Whether you’re changing industries, relocating, or facing job loss, your network becomes your lifeline. When things shift unexpectedly, it’s the people you’ve stayed connected with who will provide guidance, referrals, and emotional support. Building your network is like building insurance—you hope you don’t need it urgently, but when you do, it makes all the difference.",
       imageContent: {
-        image: "/networking_event.jpg",
+        image: "/networking_event.webp",
         alt: "People networking at a professional event",
       },
       moreContent:
@@ -256,7 +256,7 @@ export const blogCards: BlogCardData[] = [
       content:
         "Every week won’t be perfect—and that’s okay. Take 10–15 minutes at the end of each week to review what went well, what didn’t, and what you’d like to improve. Did you meet your goals? Were your time blocks realistic? What caused unexpected delays? Small weekly reflections like these help you fine-tune your system over time.",
       imageContent: {
-        image: "/planning.jpg",
+        image: "/planning.webp",
         alt: "Student planning their weekly schedule",
       },
       moreContent:
@@ -323,7 +323,7 @@ export const blogCards: BlogCardData[] = [
       content:
         "It’s easy to overpack when moving to college. Focus on essentials—clothing for different seasons, study supplies, toiletries, basic kitchenware, and a few items from home for comfort. Avoid bringing everything you own. Your future self will thank you when it’s time to unpack.",
       imageContent: {
-        image: "/college.jpg",
+        image: "/college.webp",
         alt: "Student packing and preparing for college",
       },
       moreContent:
@@ -385,7 +385,7 @@ export const blogCards: BlogCardData[] = [
       content:
         "Eventually, you may find yourself in a position to give back. Mentoring others is one of the most rewarding ways to solidify your own knowledge and make an impact. Share your story, offer guidance, and encourage others just as someone once did for you.",
       imageContent: {
-        image: "/mentorship.jpg",
+        image: "/mentorship.webp",
         alt: "Young professional meeting with mentor",
       },
       moreContent:
@@ -447,7 +447,7 @@ export const blogCards: BlogCardData[] = [
       content:
         "Financial literacy also includes smart shopping habits, avoiding scams, comparing prices, and understanding digital banking tools. Students should know how to open and manage a bank account, avoid overdraft fees, and recognize when a financial offer is too good to be true. Empowerment begins with awareness.",
       imageContent: {
-        image: "/finance.jpg",
+        image: "/finance.webp",
         alt: " Student making financial plans",
       },
       moreContent:
@@ -499,7 +499,7 @@ export const blogCards: BlogCardData[] = [
       content:
         "You don’t need a formal course to build soft skills. Volunteer for leadership roles in school projects. Practice active listening in conversations. Ask for feedback from mentors or colleagues. Journaling, reflection, and online simulations can also help you identify and strengthen your interpersonal skills.",
       imageContent: {
-        image: "/soft-skills.jpg",
+        image: "/soft-skills.webp",
         alt: "Diverse group of young professionals collaborating",
       },
       moreContent:
@@ -551,7 +551,7 @@ export const blogCards: BlogCardData[] = [
       content:
         "Here’s how to actively position yourself for success:\n- Take online courses (e.g., Coursera, edX, Udemy)\n- Build real-world projects or contribute to open-source\n- Seek internships or freelance gigs\n- Join workshops, bootcamps, or hackathons\n- Develop your communication and teamwork through group projects",
       imageContent: {
-        image: "/top-skills.jpg",
+        image: "/top-skills.webp",
         alt: "Professional team discussing skills in a modern workspace",
       },
       moreContent:
@@ -603,7 +603,7 @@ export const blogCards: BlogCardData[] = [
       content:
         "Keeping communication open with teachers, coaches, and parents can help students navigate conflicts in their schedule or seek help when they feel overextended. A support system makes balancing responsibilities more manageable.",
       imageContent: {
-        image: "/extra-curricular.jpg",
+        image: "/extra-curricular.webp",
         alt: "Students Catching a Laugh after a long day of classes",
       },
       moreContent:

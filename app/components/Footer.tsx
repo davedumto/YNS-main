@@ -18,7 +18,7 @@ const Footer = () => {
     { name: "Blog", href: "/blog" },
     { name: "Help Center", href: "/contact-us" },
     // { name: "Partners", href: "/partners" },
-    { name: "Courses", href: "/courses" },
+    // { name: "Courses", href: "/courses" },
     { name: "Learn", href: "/learn" },
   ];
 
@@ -63,7 +63,7 @@ const Footer = () => {
         <div className="flex flex-col gap-[125px] w-full">
           <div className="lg:flex justify-between gap-[6em] w-full h-full items-start ">
             <Image
-              src="/images/logo-main2.png"
+              src="/images/logo-main2.webp"
               alt="Logo"
               width={200}
               height={50}

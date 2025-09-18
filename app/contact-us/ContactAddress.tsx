@@ -32,7 +32,7 @@ const ContactAddress = () => {
         </div>
       </div>
       
-      <Image src="/images/bridge.png" alt="bridge" height={100} width={500} />
+      <Image src="/images/bridge.webp" alt="bridge" height={100} width={500} />
     </div>
   );
 };

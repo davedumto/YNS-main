@@ -1,6 +1,6 @@
 "use client";
 import { AboutBg } from "@/public/images";
-import img2 from "@/public/images/about-us-img2.png";
+import img2 from "@/public/images/about-us-img2.webp";
 import { ArrowUpRight } from "lucide-react";
 import Image from "next/image";
 import badge from "@/public/Logosticker.svg";

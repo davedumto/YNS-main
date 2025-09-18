@@ -89,7 +89,7 @@ const Newsletter = () => {
   return (
     <Section id="newsletter">
       <div
-        style={{ backgroundImage: 'url("/newsletterbg.png")' }}
+        style={{ backgroundImage: 'url("/newsletterbg.webp")' }}
         className="Newsletter flex flex-col p-4 py-16 lg:p-16 rounded-3xl justify-between bg-cover bg-no-repeat bg-top w-full h-full"
       >
         <div className="flex flex-col items-center lg:items-start lg:gap-[2em] gap-[1em]">

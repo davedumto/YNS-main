@@ -1,6 +1,6 @@
 import Star4 from "./4Star.svg";
 import IntercomMessenger from "./Intercom Messenger.svg";
-import Hero_Mobile from "./hero-mobile.svg";
+import Hero_Mobile from "./hero-mobile.webp";
 import Sketch_Annotation from "./Sketch-annotation-element-stroke-abstract-rainbow-curly-line.svg";
 import Smile from "./Smile.svg";
 import Photo_Card from "./photo-card.svg";
@@ -14,10 +14,10 @@ import Star2 from "./Star.svg";
 import Group1 from "./Frame 1000001814.svg";
 import Group2 from "./Frame 1000001814 (1).svg";
 import Group3 from "./Frame 1000001814 (2).svg";
-import Sticker1 from "./Logo stanp sketch.png";
-import Sticker2 from "./Logo stanp sketch (1).png";
-import Sticker3 from "./Logo stanp sketch (2).png";
-import Hero from "./hero.svg";
+import Sticker1 from "./Logo stanp sketch.webp";
+import Sticker2 from "./Logo stanp sketch (1).webp";
+import Sticker3 from "./Logo stanp sketch (2).webp";
+import Hero from "./hero.webp";
 import StickBadge from "./Rectangle 19275.svg";
 export {
   Star4,

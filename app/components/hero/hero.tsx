@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import Link from "next/link";
 
 import { Group } from "@/public";
-import  Hero_Mobile  from "@/public/images/mob-hero.png";
+import  Hero_Mobile  from "@/public/images/mob-hero.webp";
 
 export default function Hero() {
   return (
@@ -13,9 +13,9 @@ export default function Hero() {
         {/* Preload critical images */}
         <link
           rel="preload"
-          href="/icons/hero.svg"
+          href="/icons/hero.webp"
           as="image"
-          type="image/svg+xml"
+          type="image/webp"
         />
         <link
           rel="preload"
@@ -92,7 +92,7 @@ export default function Hero() {
                   priority
                 />
                 <Image
-                  src="/icons/hero.svg"
+                  src="/icons/hero.webp"
                   width={1220}
                   height={672}
                   alt="homepage image"
