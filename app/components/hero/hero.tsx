@@ -98,8 +98,6 @@ export default function Hero() {
                   alt="homepage image"
                   priority
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 1220px"
-                  placeholder="blur"
-                  blurDataURL="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTIyMCIgaGVpZ2h0PSI2NzIiIHZpZXdCb3g9IjAgMCAxMjIwIDY3MiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjEyMjAiIGhlaWdodD0iNjcyIiBmaWxsPSIjRjNGNEY2Ii8+Cjwvc3ZnPgo="
                 />
                 <Image
                   src="/images/Star2.svg"
