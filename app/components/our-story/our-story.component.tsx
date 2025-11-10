@@ -20,10 +20,10 @@ const ImageModal = React.memo<{
   const [isMobile, setIsMobile] = useState(false);
   const backdropRef = useRef<HTMLDivElement>(null);
 
-  // Check if device is mobile
+  // Check if device is mobile or tablet
   useEffect(() => {
     const checkMobile = () => {
-      setIsMobile(window.innerWidth < 768);
+      setIsMobile(window.innerWidth < 1024);
     };
     
     checkMobile();
@@ -100,7 +100,7 @@ const ImageModal = React.memo<{
   return (
     <motion.div 
       ref={backdropRef}
-      className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-80 p-4 md:hidden"
+      className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-80 p-4 lg:hidden"
       variants={backdropVariants}
       initial="hidden"
       animate="visible"
@@ -192,10 +192,10 @@ const OurStory: React.FC = () => {
     { src: Story6, alt: "Fostering creativity and collaboration" },
   ], []);
 
-  // Check if device is mobile
+  // Check if device is mobile or tablet
   useEffect(() => {
     const checkMobile = () => {
-      setIsMobile(window.innerWidth < 768);
+      setIsMobile(window.innerWidth < 1024);
     };
     
     checkMobile();
@@ -235,8 +235,8 @@ const OurStory: React.FC = () => {
             changemakers of tomorrow.
           </p>
           
-          {/* Mobile CTA */}
-          <div className="mt-6 flex justify-center md:hidden">
+          {/* Mobile/Tablet CTA */}
+          <div className="mt-6 flex justify-center lg:hidden">
             <div className="flex items-center gap-2 bg-green-50 px-4 py-2 rounded-full border border-green-100">
               <Eye className="w-4 h-4 text-green-700" aria-hidden="true" />
               <span className="text-sm text-green-700 font-medium font-manrope">
@@ -280,6 +280,7 @@ const OurStory: React.FC = () => {
             <StoryImage
               src={galleryImages[3].src}
               alt={galleryImages[3].alt}
+              onClick={() => handleImageClick(galleryImages[3].src, galleryImages[3].alt)}
               className="w-full h-[149px] md:h-[200px] lg:h-full object-cover lg:rounded-lg shadow-lg"
               index={3}
             />
