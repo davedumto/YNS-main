@@ -1,13 +1,13 @@
 'use client'
 import React, { useState, useEffect, useRef, useMemo } from "react";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
-import Story1 from "@/public/images/story-1.svg";
-import Story2 from "@/public/images/story-2.svg";
-import Story3 from "@/public/images/story-3.svg";
-import Story4 from "@/public/images/story-4.svg";
-import Story5 from "@/public/story5.svg";
-import Story6 from "@/public/story6.svg";
+import Story1 from "@/public/images/story-1.webp";
+import Story2 from "@/public/images/story-2.webp";
+import Story3 from "@/public/images/story-3.webp";
+import Story4 from "@/public/images/story-4.webp";
+import Story5 from "@/public/images/story5.webp";
+import Story6 from "@/public/images/story6.webp";
 import { X, Eye } from "lucide-react";
 import Section from "@/components/layout/Section";
 
@@ -152,7 +152,7 @@ ImageModal.displayName = 'ImageModal';
 
 // Optimized story image component - no hover animations
 const StoryImage = React.memo<{
-  src: string;
+  src: string | StaticImageData;
   alt: string;
   className: string;
   onClick?: () => void;
@@ -204,9 +204,10 @@ const OurStory: React.FC = () => {
   }, []);
 
   // Memoize click handler to prevent unnecessary re-renders
-  const handleImageClick = useMemo(() => (image: string, alt: string) => {
+  const handleImageClick = useMemo(() => (image: string | StaticImageData, alt: string) => {
     if (isMobile) {
-      setSelectedImage({ src: image, alt });
+      const imageSrc = typeof image === 'string' ? image : image.src;
+      setSelectedImage({ src: imageSrc, alt });
     }
   }, [isMobile]);
 
